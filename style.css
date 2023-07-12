@@ -10,6 +10,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif; 
     background-image: url('images/bg-header-desktop.png');
     background-repeat: no-repeat;
+    background-size: contain;
     /* width: 100%; */
 }
 
@@ -117,13 +118,14 @@ h4 {
 
 
             /* main...... */
-main {
-    min-height: 300px;
-    max-width: 900px;
+.container-main {
+    /* min-height: 300px; */
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
+    margin: 0 auto;
 }
 
 .semi-container {
@@ -173,19 +175,17 @@ h4 {
 
 @keyframes sub-main {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-150px);
     }
     25% {
-        transform: translate(0);
+        transform: translate(100px)
     }
     50% {
-        transform:translateX(200px) ;
+        transform: translate(150px);
     }
-    75% {
-        transform: translateX(200px);
-    }
-    100% {
 
+    100% {
+        transform: translate(-100px);
     }
 
 }
@@ -318,8 +318,10 @@ footer {
             font-size: 14px;
         }
 
-    main {  
+    .container-main {  
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         max-width: 300px;
         margin: 0 auto;

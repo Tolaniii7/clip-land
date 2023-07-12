@@ -176,17 +176,17 @@ h4 {
 
 @keyframes sub-main {
     0% {
-        transform: translateX(-150px);
+        transform: translateX(-250px);
     }
     25% {
-        transform: translate(100px)
+        transform: translate(200px)
     }
     50% {
-        transform: translate(150px);
+        transform: translate(250px);
     }
 
     100% {
-        transform: translate(-100px);
+        transform: translate(-200px);
     }
 
 }
@@ -393,23 +393,21 @@ footer {
         animation: sub-main 3s ease 2s infinite normal both;
     } */
 
-    @keyframes sub-main {
-        0% {
-            transform: translateX(-10px);
-        }
+@keyframes sub-main {
+    0% {
+        transform: translateX(-100px);
+    }
 
-         25% {
-            transform: translate(-20px)
-        }
+    25% {
+        transform: translate(50px)
+    }
 
-        50% {
-            transform: translate(10px);
-        } 
+    50% {
+        transform: translate(100px);
+    }
 
-        100% {
-            transform: translate(20px);
-        }
-
-
+    100% {
+        transform: translate(-50px);
+    }
 
 }

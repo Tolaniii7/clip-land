@@ -11,6 +11,7 @@ body {
     background-image: url('images/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
+    overflow-x: hidden;
     /* width: 100%; */
 }
 
@@ -308,6 +309,10 @@ footer {
         flex-direction: column;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
         header>p,
         .sub-heading > p,
         .semi-container > p,
@@ -382,6 +387,28 @@ footer {
     .socials {
         margin-top: 1em;
     }
+
+    /* .sub-main>img {
+        margin-top: 3em;
+        animation: sub-main 3s ease 2s infinite normal both;
+    } */
+
+    @keyframes sub-main {
+        0% {
+            transform: translateX(-10px);
+        }
+
+         25% {
+            transform: translate(-20px)
+        }
+
+        50% {
+            transform: translate(10px);
+        } 
+
+        100% {
+            transform: translate(20px);
+        }
 
 
 

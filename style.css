@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif; 
+    background-image: url('images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    /* width: 100%; */
+}
+
+
+
+
+       /* heading section */
+
+header {
+    max-width: 400px;
+    padding: 10px ;
+    margin: 20px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: hsl(210, 10%, 33%);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px ;
+    opacity: 0.7;
+    color:hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+.downloads {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+@keyframes downloads {
+   from{
+    transform: translateX(-300px);
+   }
+   to{
+    transform: translateX(0);
+   }
+}
+
+@keyframes download {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.ios {
+    background: hsl(171, 66%, 44%);
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    animation: downloads 1s ease-in-out 1;
+}
+
+.mac {
+    background: hsl(233, 100%, 69%);
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    animation: download 1s  ease-out 1 ;
+}
+
+        /* sub-heading */
+
+.sub-heading {
+    max-width: 400px;
+    margin: 5em auto ;
+    padding:5px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sub-heading > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+
+            /* main...... */
+main {
+    min-height: 300px;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.semi-container {
+    width: 200px;
+    margin-top: 0.5em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 15px;
+}
+
+h5{
+    font-weight: 300;
+}
+.semi-container > p {
+    font-size: 20px;
+    opacity: 0.8;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.3;
+    margin-top: 5px;
+}
+
+                /* sub-main */
+.sub-main {
+    max-width: 350px;
+    margin: 5em auto;
+    padding: 1em;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h4 {
+    
+    font-weight: 300;
+    text-align: center;
+}
+.sub-main > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+.sub-main > img {
+    margin-top: 3em;
+    animation: sub-main 3s ease 2s infinite normal both;
+}
+
+@keyframes sub-main {
+    0% {
+        transform: translateX(-200px);
+    }
+    25% {
+        transform: translate(0);
+    }
+    50% {
+        transform:translateX(200px) ;
+    }
+    75% {
+        transform: translateX(200px);
+    }
+    100% {
+
+    }
+
+}
+
+
+        /* workflow........ */
+
+.workflow {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.workflow-header > h4 {
+    font-weight: 600;
+}
+
+.workflow-header > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    color: hsl(201, 11%, 66%);
+}
+
+.workflow-container {
+    display: flex;
+    gap: 0.5em;
+    margin: 2em ;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work > h5 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.work > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+    color: hsl(201, 11%, 66%);
+}
+
+ /* image-groups..... */
+
+.image-group {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 10em auto;
+}
+
+/* software...... */
+.software {
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.software > h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.software > p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    opacity: 0.7;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+footer {
+    background:hsl(201, 11%, 66%, 0.1);
+    /* opacity: 0.3; */
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+    padding: 20px;
+}
+
+.footings {
+    display: flex;
+    gap: 3em;
+    font-size: 12px;
+    
+}
+
+.double > p {
+    color: black;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and ( max-width:500px ) {
+    .downloads {
+        display: flex;
+        flex-direction: column;
+    }
+
+        header>p,
+        .sub-heading > p,
+        .semi-container > p,
+        .software > p,
+        .workflow-header>p,
+        .sub-main > p,
+        .workflow-header > p {
+            font-size: 14px;
+        }
+
+    main {  
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .semi-container > h5, p {
+        text-align: center;
+    }
+
+    .workflow-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        }
+
+        .work > p {
+            font-size: 12px;
+        }
+
+    .image-group {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        gap: 5em;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .image-group > img {
+        height: 30%;
+        width: 30%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footings {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        font-size: 14px;
+    }
+
+
+    .footings > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .socials {
+        margin-top: 1em;
+    }
+
+
+
+}
